@@ -24,6 +24,11 @@ public class Totals {
 	public void setTotalGain(String totalGain) {
 		this.totalGain = totalGain;
 	}
+	@Override
+	public String toString() {
+		return "Totals [currentMarketValue=" + currentMarketValue + ", dayGain=" + dayGain + ", totalGain=" + totalGain
+				+ "]";
+	}
 	
 	
 }
