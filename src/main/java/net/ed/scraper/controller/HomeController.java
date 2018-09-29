@@ -3,8 +3,6 @@ package net.ed.scraper.controller;
 import java.text.DateFormat;
 import java.util.Date;
 import java.util.Locale;
-//import org.slf4j.Logger;
-//import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 //import org.springframework.web.bind.annotation.GetMapping;
@@ -23,7 +21,6 @@ public class HomeController {
 	
 //	private static WebDriver driver;
 	
-//	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
 	/**
 	 * Simply selects the home view to render by returning its name.
@@ -31,7 +28,6 @@ public class HomeController {
 //	@ResponseBody
 	@RequestMapping("/")
 	public String home(Locale locale, Model model) {
-//		logger.info("Welcome home! The client locale is {}.", locale);
 		
 		Date date = new Date();
 		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
@@ -39,13 +35,16 @@ public class HomeController {
 		String formattedDate = dateFormat.format(date);
 		
 		model.addAttribute("serverTime", formattedDate);
+		
+		ScraperController.scraperDriver();
+		
 		return "home";
 	}
 	
 	@RequestMapping("/scraper")
 	public String scraper(Model model) {
 
-		System.out.println("56. inside /scraper");
+		System.out.println("44. inside /scraper");
 
 		Totals t = new Totals();
 		t.setCurrentMarketValue("10,000");
@@ -53,6 +52,9 @@ public class HomeController {
 		t.setTotalGain("100");
 		
 		model.addAttribute("todays_totals", t);
+		
+		ScraperController.scraperDriver();
+		
         return "scraper";
 	}
 	
