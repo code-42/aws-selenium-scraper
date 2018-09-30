@@ -46,9 +46,9 @@ public class TestScraperController {
 	}
 	
 	
-	
 	@AfterTest
 	public void terminateBrowser() {
 		driver.close();
+		driver.quit();
 	}
 }

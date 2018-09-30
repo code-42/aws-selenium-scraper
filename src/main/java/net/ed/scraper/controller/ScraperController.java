@@ -24,25 +24,20 @@ public class ScraperController {
 		System.setProperty(keyx, valuex);
 		
 		ChromeOptions options = new ChromeOptions();
-//		options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200", "--ignore-certificate-errors");
+		options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200", "--ignore-certificate-errors");
 		WebDriver driver = new ChromeDriver(options);
 		
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		
-//		driver.get("https://google.com");
-//		driver.findElement(By.name("q")).sendKeys("selenium");
-//		
-//		WebElement button = driver.findElement(By.name("btnK"));
-//		button.sendKeys(Keys.ENTER);
-//		
-//        System.out.println("42. fin");
-        
-        driver.close();
-        System.out.println("43. driver.close()");
-        driver.quit();
-        System.out.println("43. driver.quit()");
+		driver.get("https://google.com");
+		driver.findElement(By.name("q")).sendKeys("selenium");
+		
+		WebElement button = driver.findElement(By.name("btnK"));
+		button.sendKeys(Keys.ENTER);
+		
+        System.out.println("40. fin");
         
         return driver;
 	}
@@ -55,7 +50,7 @@ public class ScraperController {
 		WebElement button = driver.findElement(By.name("btnK"));
 		button.sendKeys(Keys.ENTER);
 		
-        System.out.println("42. fin");
+        System.out.println("53. fin");
 		
 	}
 
