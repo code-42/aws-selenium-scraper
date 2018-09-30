@@ -10,45 +10,24 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class TestScraperController {
-	
-	public WebDriver driver;
-	public String baseUrl = "http://localhost:9090/aws-selenium-scraper/";
-	
-	@BeforeTest
-	public void launchBrowser() {
-		// add support for chrome driver
-		String keyx = "webdriver.chrome.driver";
-		String valuex = "/Users/melocal/Applications/lib/chromedriver";
-		System.setProperty(keyx, valuex);
-		
-		ChromeOptions options = new ChromeOptions();
-		driver = new ChromeDriver(options);
-		
-		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-		
-		driver.get(baseUrl);
-	}
+import net.ed.scraper.universal_test_driver.Config;
+import net.ed.scraper.universal_test_driver.Driver;
+import net.ed.scraper.universal_test_driver.DriverTestBaseClass;
+
+public class TestScraperController extends DriverTestBaseClass {
 	
 	@Test
 	public void verifyScraperController() {
+		
+		Driver.Instance.navigate().to(Config.URL.localhost);
+		Driver.Instance = ScraperController.scraperDriver();
+		
 		String expected = "Selenium Scraper";
-		String actual = driver.getTitle();
+		String actual = Driver.Instance.getTitle();
 		
-		driver = ScraperController.scraperDriver();
-		ScraperController.scrapeGoogle(driver);
-		
-		System.out.println(actual);
+		System.out.println("49. expected == " + expected);
+		System.out.println("50. actual == " + actual);
 		Assert.assertEquals(actual, expected);
 		
-	}
-	
-	
-	@AfterTest
-	public void terminateBrowser() {
-		driver.close();
-		driver.quit();
 	}
 }

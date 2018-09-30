@@ -21,12 +21,14 @@ public class Driver {
 			System.out.println("Initializing Driver...");
 			if(Config.Browser.browser.equalsIgnoreCase("ff")) {
 				System.setProperty(key_ff, value_ff);
-				Instance = new FirefoxDriver();				
+				Instance = new FirefoxDriver();
+				System.out.println("25. Instance == ff");
 			}
 			
 			else if(Config.Browser.browser.equalsIgnoreCase("chrome")) {
 				System.setProperty(key_chrome, value_chrome);
 				Instance = new  ChromeDriver();
+				System.out.println("31. Instance == chrome");
 			}
 
 		}
@@ -37,11 +39,11 @@ public class Driver {
 	public static void close() {
 		System.out.println("Closing browser...");
 		Instance.close();
-		Instance=null;
+//		Instance=null;
 	}
 	
 	public static void quit() {
-		System.out.println("Quit browser");
+		System.out.println("Quit browser.");
 		Instance.quit();
 		Instance=null;
 	}

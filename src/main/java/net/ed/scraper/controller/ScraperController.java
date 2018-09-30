@@ -31,14 +31,6 @@ public class ScraperController {
 		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		
-		driver.get("https://google.com");
-		driver.findElement(By.name("q")).sendKeys("selenium");
-		
-		WebElement button = driver.findElement(By.name("btnK"));
-		button.sendKeys(Keys.ENTER);
-		
-        System.out.println("40. fin");
-        
         return driver;
 	}
 	

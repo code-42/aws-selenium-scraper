@@ -1,73 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9791" started-at="2018-09-30T12:47:06Z" finished-at="2018-09-30T12:47:16Z">
+  <suite name="Default suite" duration-ms="3446" started-at="2018-09-30T14:22:43Z" finished-at="2018-09-30T14:22:47Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="9791" started-at="2018-09-30T12:47:06Z" finished-at="2018-09-30T12:47:16Z">
-      <class name="net.ed.scraper.universal_test_driver.DriverTestBaseClass">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:net.ed.scraper.universal_test_driver.DriverTestBaseClass@53b32d7]" name="beforeSuite" is-config="true" duration-ms="14" started-at="2018-09-30T12:47:06Z" finished-at="2018-09-30T12:47:06Z">
+    <test name="Default test" duration-ms="3446" started-at="2018-09-30T14:22:43Z" finished-at="2018-09-30T14:22:47Z">
+      <class name="net.ed.scraper.controller.TestHomeController">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:net.ed.scraper.controller.TestHomeController@5442a311]" name="beforeSuite" is-config="true" duration-ms="16" started-at="2018-09-30T14:22:43Z" finished-at="2018-09-30T14:22:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:net.ed.scraper.universal_test_driver.DriverTestBaseClass@53b32d7]" name="beforeTest" is-config="true" duration-ms="0" started-at="2018-09-30T12:47:06Z" finished-at="2018-09-30T12:47:06Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:net.ed.scraper.controller.TestHomeController@5442a311]" name="beforeTest" is-config="true" duration-ms="1" started-at="2018-09-30T14:22:43Z" finished-at="2018-09-30T14:22:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:net.ed.scraper.universal_test_driver.DriverTestBaseClass@53b32d7]" name="beforeClass" is-config="true" duration-ms="9423" started-at="2018-09-30T12:47:06Z" finished-at="2018-09-30T12:47:16Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:net.ed.scraper.controller.TestHomeController@5442a311]" name="beforeClass" is-config="true" duration-ms="2586" started-at="2018-09-30T14:22:44Z" finished-at="2018-09-30T14:22:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="test1()[pri:1, instance:net.ed.scraper.universal_test_driver.DriverTestBaseClass@53b32d7]" name="test1" duration-ms="23" started-at="2018-09-30T12:47:16Z" finished-at="2018-09-30T12:47:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:net.ed.scraper.universal_test_driver.DriverTestBaseClass@53b32d7]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-09-30T12:47:16Z" finished-at="2018-09-30T12:47:16Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:net.ed.scraper.controller.TestHomeController@5442a311]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-09-30T14:22:46Z" finished-at="2018-09-30T14:22:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:net.ed.scraper.universal_test_driver.DriverTestBaseClass@53b32d7]" name="afterMethod" is-config="true" duration-ms="2" started-at="2018-09-30T12:47:16Z" finished-at="2018-09-30T12:47:16Z">
+        <test-method status="PASS" signature="verifyHomepageTitle()[pri:0, instance:net.ed.scraper.controller.TestHomeController@5442a311]" name="verifyHomepageTitle" duration-ms="308" started-at="2018-09-30T14:22:46Z" finished-at="2018-09-30T14:22:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomepageTitle -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:net.ed.scraper.controller.TestHomeController@5442a311]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-09-30T14:22:46Z" finished-at="2018-09-30T14:22:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:net.ed.scraper.universal_test_driver.DriverTestBaseClass@53b32d7]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-09-30T12:47:16Z" finished-at="2018-09-30T12:47:16Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:net.ed.scraper.controller.TestHomeController@5442a311]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-09-30T14:22:46Z" finished-at="2018-09-30T14:22:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test2()[pri:2, instance:net.ed.scraper.universal_test_driver.DriverTestBaseClass@53b32d7]" name="test2" duration-ms="2" started-at="2018-09-30T12:47:16Z" finished-at="2018-09-30T12:47:16Z">
+        <test-method status="PASS" signature="verifyScraperTitle()[pri:0, instance:net.ed.scraper.controller.TestHomeController@5442a311]" name="verifyScraperTitle" duration-ms="406" started-at="2018-09-30T14:22:46Z" finished-at="2018-09-30T14:22:47Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test2 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:net.ed.scraper.universal_test_driver.DriverTestBaseClass@53b32d7]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-09-30T12:47:16Z" finished-at="2018-09-30T12:47:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:net.ed.scraper.universal_test_driver.DriverTestBaseClass@53b32d7]" name="beforeMethod" is-config="true" duration-ms="3" started-at="2018-09-30T12:47:16Z" finished-at="2018-09-30T12:47:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test3()[pri:3, instance:net.ed.scraper.universal_test_driver.DriverTestBaseClass@53b32d7]" name="test3" duration-ms="4" started-at="2018-09-30T12:47:16Z" finished-at="2018-09-30T12:47:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test3 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:net.ed.scraper.universal_test_driver.DriverTestBaseClass@53b32d7]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-09-30T12:47:16Z" finished-at="2018-09-30T12:47:16Z">
+        </test-method> <!-- verifyScraperTitle -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:net.ed.scraper.controller.TestHomeController@5442a311]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-09-30T14:22:47Z" finished-at="2018-09-30T14:22:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:net.ed.scraper.universal_test_driver.DriverTestBaseClass@53b32d7]" name="afterClass" is-config="true" duration-ms="300" started-at="2018-09-30T12:47:16Z" finished-at="2018-09-30T12:47:16Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:net.ed.scraper.controller.TestHomeController@5442a311]" name="afterClass" is-config="true" duration-ms="105" started-at="2018-09-30T14:22:47Z" finished-at="2018-09-30T14:22:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:net.ed.scraper.universal_test_driver.DriverTestBaseClass@53b32d7]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-09-30T12:47:16Z" finished-at="2018-09-30T12:47:16Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:net.ed.scraper.controller.TestHomeController@5442a311]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-09-30T14:22:47Z" finished-at="2018-09-30T14:22:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:net.ed.scraper.universal_test_driver.DriverTestBaseClass@53b32d7]" name="afterSuite" is-config="true" duration-ms="0" started-at="2018-09-30T12:47:16Z" finished-at="2018-09-30T12:47:16Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:net.ed.scraper.controller.TestHomeController@5442a311]" name="afterSuite" is-config="true" duration-ms="0" started-at="2018-09-30T14:22:47Z" finished-at="2018-09-30T14:22:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- net.ed.scraper.universal_test_driver.DriverTestBaseClass -->
+      </class> <!-- net.ed.scraper.controller.TestHomeController -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

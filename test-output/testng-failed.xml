@@ -3,13 +3,19 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="net.ed.scraper.controller.TestScraperController">
+      <class name="net.ed.scraper.controller.TestHomeController">
         <methods>
-          <include name="launchBrowser"/>
-          <include name="verifyScraperController"/>
-          <include name="terminateBrowser"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="afterMethod"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="verifyScraperTitle"/>
+          <include name="afterClass"/>
         </methods>
-      </class> <!-- net.ed.scraper.controller.TestScraperController -->
+      </class> <!-- net.ed.scraper.controller.TestHomeController -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

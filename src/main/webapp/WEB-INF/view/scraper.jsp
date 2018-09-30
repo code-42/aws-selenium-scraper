@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>New Scraper</title>
+<title>Scraper</title>
 </head>
 <body>
 Todays Totals:<br>

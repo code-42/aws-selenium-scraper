@@ -1,50 +1,35 @@
 package net.ed.scraper.controller;
 
-import java.util.concurrent.TimeUnit;
+// Adapted from Common Singleton Driver for Selenium 
+// source: https://youtu.be/zAIkKbQN_BE
+// edit URL in package net.ed.scraper.universal_test_driver.Config.java
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class TestHomeController {
-	
-	public WebDriver driver;
-	public String baseUrl = "http://localhost:9090/aws-selenium-scraper/";
-	
-	@BeforeTest
-	public void launchBrowser() {
-		// add support for chrome driver
-		String keyx = "webdriver.chrome.driver";
-		String valuex = "/Users/melocal/Applications/lib/chromedriver";
-		System.setProperty(keyx, valuex);
-		
-		ChromeOptions options = new ChromeOptions();
-		driver = new ChromeDriver(options);
-		
-		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-		
-		driver.get(baseUrl);
-	}
+import net.ed.scraper.universal_test_driver.Config;
+import net.ed.scraper.universal_test_driver.Driver;
+import net.ed.scraper.universal_test_driver.DriverTestBaseClass;
+
+public class TestHomeController extends DriverTestBaseClass{
 	
 	@Test
 	public void verifyHomepageTitle() {
-		String expected = "Selenium Scraper";
-		String actual = driver.getTitle();
-		System.out.println(actual);
+		Driver.Instance.navigate().to(Config.URL.localhost);
+		String expected = "Home";
+		String actual = Driver.Instance.getTitle();
+		System.out.println("21. expected == Home");
+		System.out.println("22. actual == " + actual);
 		Assert.assertEquals(actual, expected);
-		
 	}
 	
-	
-	
-	@AfterTest
-	public void terminateBrowser() {
-		driver.close();
+	@Test
+	public void verifyScraperTitle() {
+		Driver.Instance.navigate().to(Config.URL.scraper);
+		String expected = "Scraper";
+		String actual = Driver.Instance.getTitle();
+		System.out.println("31. expected == Scraper");
+		System.out.println("32. actual == " + actual);
+		Assert.assertEquals(actual, expected);
 	}
 }
