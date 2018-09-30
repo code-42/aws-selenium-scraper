@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>New Scraper</title>
+<title>Selenium Scraper</title>
 </head>
 <body>
 The server time is: 

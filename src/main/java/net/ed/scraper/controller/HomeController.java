@@ -36,8 +36,6 @@ public class HomeController {
 		
 		model.addAttribute("serverTime", formattedDate);
 		
-		ScraperController.scraperDriver();
-		
 		return "home";
 	}
 	
