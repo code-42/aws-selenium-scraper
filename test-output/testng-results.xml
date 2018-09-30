@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2958" started-at="2018-09-30T01:04:03Z" finished-at="2018-09-30T01:04:06Z">
+  <suite name="Default suite" duration-ms="2374" started-at="2018-09-30T01:09:51Z" finished-at="2018-09-30T01:09:53Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2958" started-at="2018-09-30T01:04:03Z" finished-at="2018-09-30T01:04:06Z">
+    <test name="Default test" duration-ms="2374" started-at="2018-09-30T01:09:51Z" finished-at="2018-09-30T01:09:53Z">
       <class name="net.ed.scraper.controller.TestHomeController">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:net.ed.scraper.controller.TestHomeController@548e7350]" name="launchBrowser" is-config="true" duration-ms="2904" started-at="2018-09-30T01:04:03Z" finished-at="2018-09-30T01:04:06Z">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:net.ed.scraper.controller.TestHomeController@548e7350]" name="launchBrowser" is-config="true" duration-ms="2308" started-at="2018-09-30T01:09:51Z" finished-at="2018-09-30T01:09:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="verifyHomepageTitle()[pri:0, instance:net.ed.scraper.controller.TestHomeController@548e7350]" name="verifyHomepageTitle" duration-ms="23" started-at="2018-09-30T01:04:06Z" finished-at="2018-09-30T01:04:06Z">
+        <test-method status="PASS" signature="verifyHomepageTitle()[pri:0, instance:net.ed.scraper.controller.TestHomeController@548e7350]" name="verifyHomepageTitle" duration-ms="31" started-at="2018-09-30T01:09:53Z" finished-at="2018-09-30T01:09:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHomepageTitle -->
