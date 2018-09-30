@@ -16,7 +16,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 public class ScraperController {
 	
-	public static void scraperDriver() {
+	public static WebDriver scraperDriver() {
 		
 		// add support for chrome driver
 		String keyx = "webdriver.chrome.driver";
@@ -31,6 +31,24 @@ public class ScraperController {
 		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		
+//		driver.get("https://google.com");
+//		driver.findElement(By.name("q")).sendKeys("selenium");
+//		
+//		WebElement button = driver.findElement(By.name("btnK"));
+//		button.sendKeys(Keys.ENTER);
+//		
+//        System.out.println("42. fin");
+        
+        driver.close();
+        System.out.println("43. driver.close()");
+        driver.quit();
+        System.out.println("43. driver.quit()");
+        
+        return driver;
+	}
+	
+	public static void scrapeGoogle(WebDriver driver) {
+		
 		driver.get("https://google.com");
 		driver.findElement(By.name("q")).sendKeys("selenium");
 		
@@ -38,11 +56,7 @@ public class ScraperController {
 		button.sendKeys(Keys.ENTER);
 		
         System.out.println("42. fin");
-        
-        driver.close();
-        driver.quit();
-        
-	
+		
 	}
 
 }

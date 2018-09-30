@@ -10,7 +10,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class TestHomeController {
+public class TestScraperController {
 	
 	public WebDriver driver;
 	public String baseUrl = "http://localhost:9090/aws-selenium-scraper/";
@@ -33,9 +33,13 @@ public class TestHomeController {
 	}
 	
 	@Test
-	public void verifyHomepageTitle() {
+	public void verifyScraperController() {
 		String expected = "Selenium Scraper";
 		String actual = driver.getTitle();
+		
+		driver = ScraperController.scraperDriver();
+		ScraperController.scrapeGoogle(driver);
+		
 		System.out.println(actual);
 		Assert.assertEquals(actual, expected);
 		

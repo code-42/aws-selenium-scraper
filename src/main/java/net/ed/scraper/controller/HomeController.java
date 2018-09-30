@@ -51,7 +51,7 @@ public class HomeController {
 		
 		model.addAttribute("todays_totals", t);
 		
-		ScraperController.scraperDriver();
+//		ScraperController.scraperDriver();
 		
         return "scraper";
 	}
