@@ -16,9 +16,9 @@ public class TestHomeController extends DriverTestBaseClass{
 	@Test
 	public void verifyHomepageTitle() {
 		Driver.Instance.navigate().to(Config.URL.localhost);
-		String expected = "Home";
+		String expected = "Home page";
 		String actual = Driver.Instance.getTitle();
-		System.out.println("21. expected == Home");
+		System.out.println("21. expected == Home page");
 		System.out.println("22. actual == " + actual);
 		Assert.assertEquals(actual, expected);
 	}
