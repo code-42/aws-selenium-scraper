@@ -24,7 +24,8 @@ public class ScraperController {
 		System.setProperty(keyx, valuex);
 		
 		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200", "--ignore-certificate-errors");
+//		options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200", "--ignore-certificate-errors");
+//		WebDriver driver = new ChromeDriver(options);
 		WebDriver driver = new ChromeDriver(options);
 		
 		driver.manage().deleteAllCookies();
@@ -34,16 +35,4 @@ public class ScraperController {
         return driver;
 	}
 	
-	public static void scrapeGoogle(WebDriver driver) {
-		
-		driver.get("https://google.com");
-		driver.findElement(By.name("q")).sendKeys("selenium");
-		
-		WebElement button = driver.findElement(By.name("btnK"));
-		button.sendKeys(Keys.ENTER);
-		
-        System.out.println("53. fin");
-		
-	}
-
 }

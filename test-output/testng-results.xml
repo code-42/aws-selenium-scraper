@@ -1,49 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3669" started-at="2018-09-30T14:40:29Z" finished-at="2018-09-30T14:40:32Z">
+  <suite name="Default suite" duration-ms="69126" started-at="2018-10-01T01:40:09Z" finished-at="2018-10-01T01:41:18Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3669" started-at="2018-09-30T14:40:29Z" finished-at="2018-09-30T14:40:32Z">
-      <class name="net.ed.scraper.controller.TestScraperController">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:net.ed.scraper.controller.TestScraperController@5442a311]" name="beforeSuite" is-config="true" duration-ms="13" started-at="2018-09-30T14:40:29Z" finished-at="2018-09-30T14:40:29Z">
+    <test name="Default test" duration-ms="69126" started-at="2018-10-01T01:40:09Z" finished-at="2018-10-01T01:41:18Z">
+      <class name="net.ed.scraper.controller.TestHomeController">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:net.ed.scraper.controller.TestHomeController@5442a311]" name="beforeSuite" is-config="true" duration-ms="10" started-at="2018-10-01T01:40:09Z" finished-at="2018-10-01T01:40:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:net.ed.scraper.controller.TestScraperController@5442a311]" name="beforeTest" is-config="true" duration-ms="0" started-at="2018-09-30T14:40:29Z" finished-at="2018-09-30T14:40:29Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:net.ed.scraper.controller.TestHomeController@5442a311]" name="beforeTest" is-config="true" duration-ms="1" started-at="2018-10-01T01:40:09Z" finished-at="2018-10-01T01:40:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:net.ed.scraper.controller.TestScraperController@5442a311]" name="beforeClass" is-config="true" duration-ms="2389" started-at="2018-09-30T14:40:29Z" finished-at="2018-09-30T14:40:31Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:net.ed.scraper.controller.TestHomeController@5442a311]" name="beforeClass" is-config="true" duration-ms="2416" started-at="2018-10-01T01:40:09Z" finished-at="2018-10-01T01:40:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:net.ed.scraper.controller.TestScraperController@5442a311]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-09-30T14:40:31Z" finished-at="2018-09-30T14:40:31Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:net.ed.scraper.controller.TestHomeController@5442a311]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-10-01T01:40:11Z" finished-at="2018-10-01T01:40:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="verifyScraperController()[pri:0, instance:net.ed.scraper.controller.TestScraperController@5442a311]" name="verifyScraperController" duration-ms="1163" started-at="2018-09-30T14:40:31Z" finished-at="2018-09-30T14:40:32Z">
+        <test-method status="PASS" signature="verifyHomepageTitle()[pri:0, instance:net.ed.scraper.controller.TestHomeController@5442a311]" name="verifyHomepageTitle" duration-ms="430" started-at="2018-10-01T01:40:11Z" finished-at="2018-10-01T01:40:12Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyScraperController -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:net.ed.scraper.controller.TestScraperController@5442a311]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-09-30T14:40:32Z" finished-at="2018-09-30T14:40:32Z">
+        </test-method> <!-- verifyHomepageTitle -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:net.ed.scraper.controller.TestHomeController@5442a311]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-10-01T01:40:12Z" finished-at="2018-10-01T01:40:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:net.ed.scraper.controller.TestHomeController@5442a311]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-10-01T01:40:12Z" finished-at="2018-10-01T01:40:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:net.ed.scraper.controller.TestScraperController@5442a311]" name="afterClass" is-config="true" duration-ms="88" started-at="2018-09-30T14:40:32Z" finished-at="2018-09-30T14:40:32Z">
+        <test-method status="PASS" signature="verifyScraperTitle()[pri:0, instance:net.ed.scraper.controller.TestHomeController@5442a311]" name="verifyScraperTitle" duration-ms="58914" started-at="2018-10-01T01:40:12Z" finished-at="2018-10-01T01:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyScraperTitle -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:net.ed.scraper.controller.TestHomeController@5442a311]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-10-01T01:41:11Z" finished-at="2018-10-01T01:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:net.ed.scraper.controller.TestHomeController@5442a311]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-10-01T01:41:11Z" finished-at="2018-10-01T01:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verifyYahooLogin()[pri:0, instance:net.ed.scraper.controller.TestHomeController@5442a311]" name="verifyYahooLogin" duration-ms="7039" started-at="2018-10-01T01:41:11Z" finished-at="2018-10-01T01:41:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyYahooLogin -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:net.ed.scraper.controller.TestHomeController@5442a311]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-10-01T01:41:18Z" finished-at="2018-10-01T01:41:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:net.ed.scraper.controller.TestHomeController@5442a311]" name="afterClass" is-config="true" duration-ms="276" started-at="2018-10-01T01:41:18Z" finished-at="2018-10-01T01:41:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:net.ed.scraper.controller.TestScraperController@5442a311]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-09-30T14:40:32Z" finished-at="2018-09-30T14:40:32Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:net.ed.scraper.controller.TestHomeController@5442a311]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-10-01T01:41:18Z" finished-at="2018-10-01T01:41:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:net.ed.scraper.controller.TestScraperController@5442a311]" name="afterSuite" is-config="true" duration-ms="0" started-at="2018-09-30T14:40:32Z" finished-at="2018-09-30T14:40:32Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:net.ed.scraper.controller.TestHomeController@5442a311]" name="afterSuite" is-config="true" duration-ms="0" started-at="2018-10-01T01:41:18Z" finished-at="2018-10-01T01:41:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- net.ed.scraper.controller.TestScraperController -->
+      </class> <!-- net.ed.scraper.controller.TestHomeController -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

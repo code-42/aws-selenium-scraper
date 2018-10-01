@@ -8,7 +8,7 @@ public class Config {
 	
 	public static class URL{
 		public static String google = "https://www.google.com";
-		public static String yahoo = "https://login.yahoo.com";
+		public static String yahoologin = "https://login.yahoo.com";
 		public static String localhost = "http://localhost:9090/aws-selenium-scraper/";
 		public static String scraper = "http://localhost:9090/aws-selenium-scraper/scraper";
 		

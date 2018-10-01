@@ -32,4 +32,14 @@ public class TestHomeController extends DriverTestBaseClass{
 		System.out.println("32. actual == " + actual);
 		Assert.assertEquals(actual, expected);
 	}
+	
+	@Test
+	public void verifyYahooLogin() {
+		Driver.Instance.navigate().to(Config.URL.yahoologin);
+		String expected = "Yahoo - login";
+		String actual = Driver.Instance.getTitle();
+		System.out.println("41. expected == Yahoo - login");
+		System.out.println("42. actual == " + actual);
+		Assert.assertEquals(actual, expected);
+	}
 }
